@@ -743,18 +743,18 @@ body {
 }
 @media (min-width: 62em) and (max-width: 87.5em){
   .benefits__form-wrapper::before {
-    transform: translate(6.5vw, 30%);
-    width: 16.5vw; /* 396/640 */
+    transform: translate(6.5vw, 30%) !important;
+    width: 16.5vw !important; /* 396/640 */
   }
   .benefits--reverse .benefits__form-wrapper::before {
-    transform: translate(-7vw, 30%) scale(-1, 1);
-    width: 16.5vw; /* 396/640 */
+    transform: translate(-7vw, 30%) scale(-1, 1) !important;
+    width: 16.5vw !important; /* 396/640 */
   }
 }
 @media (min-width: 62em) and (max-width: 76.875em){
   .benefits--reverse .benefits__form-wrapper::before {
-    transform: translate(-7vw, -28%) scale(-1, 1);
-    width: 16.5vw; /* 396/640 */
+    transform: translate(-7vw, -28%) scale(-1, 1) !important;
+    width: 16.5vw !important; /* 396/640 */
   }
 }
 @media (min-width: 62em) and (max-width: 120em){
