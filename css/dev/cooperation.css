@@ -55,6 +55,11 @@
 .cooperation__icon img {
   max-width: 100%;
 }
+@media (max-width: 80em) {
+  .cooperation__item h3 {
+    font-size: 1.75rem;
+  }
+}
 @media (max-width: 62em) {
   .cooperation__item::before {
     right: -5.9375rem; /* 467/682 */
@@ -123,9 +128,9 @@
     font-size: 0.875rem;
   }
 }
-@media (min-width: 29.9375em) and (max-width: 80em) {
+@media (min-width: 29.9375em) and (max-width: 79.9375em) {
   .cooperation__item h3 {
-    font-size: clamp( 0.875rem , -0.09675405743125rem  +  3.2459425718vw , 2.5rem );
+    font-size: clamp( 0.875rem , 0.35109375rem  +  1.75vw , 1.75rem );
   }
 }
 @media (min-width: 29.9375em) and (max-width: 62em) {
@@ -200,9 +205,9 @@
     gap: 2.5rem;
   }
 }
-@media (min-width: 80em) {
+@media (min-width: 80em) and (max-width: 120em) {
   .cooperation__item h3 {
-    font-size: 2.5rem;
+    font-size: clamp( 1.75rem , 0.25rem  +  1.875vw , 2.5rem );
   }
 }
 @media (min-width: 120em) {
@@ -211,6 +216,9 @@
   }
   .cooperation {
     padding-bottom: 12.5rem;
+  }
+  .cooperation__item h3 {
+    font-size: 2.5rem;
   }
   .cooperation__item {
     padding-top: 4.375rem;

@@ -122,6 +122,11 @@
     transform: translate(-65%, 35%);
   }
 }
+@media (max-width: 75em) {
+  .contacts__subtitle {
+    font-size: 1.75rem;
+  }
+}
 @media (max-width: 48em) {
   .contacts::before {
     transform: translate(-50%, -50%);
@@ -202,10 +207,12 @@
     font-size: 0.875rem;
   }
 }
-@media (min-width: 29.9375em) and (max-width: 62em) {
+@media (min-width: 29.9375em) and (max-width: 75em) {
   .contacts__subtitle {
-    font-size: clamp( 0.875rem , -0.35051169590625rem  +  4.0935672515vw , 2.1875rem );
+    font-size: clamp( 0.875rem , 0.2936893203875rem  +  1.9417475728vw , 1.75rem );
   }
+}
+@media (min-width: 29.9375em) and (max-width: 62em) {
   .contacts__socials a span {
     font-size: clamp( 0.75rem , 0.2831384015625rem  +  1.559454191vw , 1.25rem );
   }
@@ -250,9 +257,6 @@
   .contacts__socials-block:not(:last-child) {
     margin-bottom: 2.1875rem;
   }
-  .contacts__subtitle {
-    font-size: 2.1875rem;
-  }
   .contacts__socials a span {
     font-size: 1.25rem;
   }
@@ -275,12 +279,20 @@
     font-size: 1.5625rem;
   }
 }
+@media (min-width: 75em) and (max-width: 120em) {
+  .contacts__subtitle {
+    font-size: clamp( 1.75rem , 1.02083333333125rem  +  0.9722222222vw , 2.1875rem );
+  }
+}
 @media (min-width: 120em) {
   .contacts {
     padding-top: 16.25rem;
   }
   .contacts {
     padding-bottom: 12.5rem;
+  }
+  .contacts__subtitle {
+    font-size: 2.1875rem;
   }
 }
 @media (any-hover: hover) {
