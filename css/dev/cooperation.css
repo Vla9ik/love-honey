@@ -55,20 +55,35 @@
 .cooperation__icon img {
   max-width: 100%;
 }
+@media (max-width: 120em) {
+  .cooperation__container {
+    max-width: 75rem;
+  }
+}
+@media (max-width: 100em) {
+  .cooperation__icon {
+    width: 5rem;
+    height: 5rem;
+    flex: 0 0 5rem;
+  }
+}
 @media (max-width: 80em) {
   .cooperation__item h3 {
     font-size: 1.75rem;
+  }
+}
+@media (max-width: 75em) {
+  .cooperation__label {
+    font-size: 1.5625rem;
+  }
+  .cooperation__item {
+    gap: 1.5625rem;
   }
 }
 @media (max-width: 62em) {
   .cooperation__item::before {
     right: -5.9375rem; /* 467/682 */
     transform: rotate(-27deg);
-  }
-  .cooperation__icon {
-    width: 5rem;
-    height: 5rem;
-    flex: 0 0 5rem;
   }
 }
 @media (max-width: 48em) {
@@ -133,9 +148,14 @@
     font-size: clamp( 0.875rem , 0.35109375rem  +  1.75vw , 1.75rem );
   }
 }
-@media (min-width: 29.9375em) and (max-width: 62em) {
+@media (min-width: 29.9375em) and (max-width: 75em) {
   .cooperation__label {
-    font-size: clamp( 0.875rem , -0.35051169590625rem  +  4.0935672515vw , 2.1875rem );
+    font-size: clamp( 0.875rem , 0.41825589459375rem  +  1.5256588072vw , 1.5625rem );
+  }
+}
+@media (min-width: 37.5em) and (max-width: 75em) {
+  .cooperation__item {
+    gap: clamp( 0.75rem , -0.0625rem  +  2.1666666667vw , 1.5625rem );
   }
 }
 @media (min-width: 37.5em) and (max-width: 62em) {
@@ -147,9 +167,6 @@
   }
   .cooperation__items {
     gap: clamp( 0.9375rem , -0.49744897959375rem  +  3.8265306122vw , 1.875rem );
-  }
-  .cooperation__item {
-    gap: clamp( 0.75rem , -1.92857142856875rem  +  7.1428571429vw , 2.5rem );
   }
 }
 @media (min-width: 37.5em) and (max-width: 120em) {
@@ -192,17 +209,24 @@
   .cooperation__title:not(:last-child) {
     margin-bottom: 2.8125rem;
   }
-  .cooperation__label {
-    font-size: 2.1875rem;
-  }
   .cooperation__label:not(:last-child) {
     margin-bottom: 3.125rem;
   }
   .cooperation__items {
     gap: 1.875rem;
   }
+}
+@media (min-width: 75em) and (max-width: 120em) {
+  .cooperation__label {
+    font-size: clamp( 1.5625rem , 0.52083333333125rem  +  1.3888888889vw , 2.1875rem );
+  }
   .cooperation__item {
-    gap: 2.5rem;
+    gap: clamp( 1.5625rem , 6.25e-8rem  +  2.0833333333vw , 2.5rem );
+  }
+}
+@media (min-width: 75em) {
+  .cooperation__label {
+    font-size: 1.5625rem;
   }
 }
 @media (min-width: 80em) and (max-width: 120em) {
@@ -216,6 +240,12 @@
   }
   .cooperation {
     padding-bottom: 12.5rem;
+  }
+  .cooperation__label {
+    font-size: 2.1875rem;
+  }
+  .cooperation__item {
+    gap: 2.5rem;
   }
   .cooperation__item h3 {
     font-size: 2.5rem;

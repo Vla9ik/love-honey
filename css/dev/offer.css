@@ -70,9 +70,34 @@
 .offer__description .green {
   color: #a9d944;
 }
+@media (max-width: 120em) {
+  .offer__container {
+    max-width: 75rem;
+  }
+}
+@media (max-width: 100em) {
+  .offer__icon {
+    width: 5rem;
+    height: 5rem;
+    flex: 0 0 5rem;
+  }
+}
+@media (max-width: 90em) {
+  .offer__container {
+    max-width: 64rem;
+  }
+}
 @media (max-width: 80em) {
   .offer__item h3 {
-    font-size: 2.8125rem;
+    font-size: 2.1875rem;
+  }
+}
+@media (max-width: 75em) {
+  .offer__label {
+    font-size: 1.5625rem;
+  }
+  .offer__item {
+    gap: 1.5625rem;
   }
 }
 @media (max-width: 73.4375em) {
@@ -84,11 +109,6 @@
   .offer__item::before {
     right: -5.9375rem; /* 467/682 */
     transform: rotate(-27deg);
-  }
-  .offer__icon {
-    width: 5rem;
-    height: 5rem;
-    flex: 0 0 5rem;
   }
 }
 @media (max-width: 48em) {
@@ -143,7 +163,12 @@
 }
 @media (min-width: 29.9375em) and (max-width: 79.9375em) {
   .offer__item h3 {
-    font-size: clamp( 0.875rem , -0.285078125rem  +  3.875vw , 2.8125rem );
+    font-size: clamp( 0.875rem , 0.089140625rem  +  2.625vw , 2.1875rem );
+  }
+}
+@media (min-width: 29.9375em) and (max-width: 75em) {
+  .offer__label {
+    font-size: clamp( 0.875rem , 0.41825589459375rem  +  1.5256588072vw , 1.5625rem );
   }
 }
 @media (min-width: 29.9375em) and (max-width: 64em) {
@@ -152,11 +177,13 @@
   }
 }
 @media (min-width: 29.9375em) and (max-width: 62em) {
-  .offer__label {
-    font-size: clamp( 0.875rem , -0.35051169590625rem  +  4.0935672515vw , 2.1875rem );
-  }
   .offer__items:not(:last-child) {
     margin-bottom: clamp( 0.9375rem , -1.105019493175rem  +  6.8226120858vw , 3.125rem );
+  }
+}
+@media (min-width: 37.5em) and (max-width: 75em) {
+  .offer__item {
+    gap: clamp( 0.75rem , -0.0625rem  +  2.1666666667vw , 1.5625rem );
   }
 }
 @media (min-width: 37.5em) and (max-width: 62em) {
@@ -165,9 +192,6 @@
   }
   .offer__items {
     gap: clamp( 0.9375rem , -0.49744897959375rem  +  3.8265306122vw , 1.875rem );
-  }
-  .offer__item {
-    gap: clamp( 0.75rem , -1.92857142856875rem  +  7.1428571429vw , 2.5rem );
   }
 }
 @media (min-width: 37.5em) and (max-width: 120em) {
@@ -193,9 +217,6 @@
   }
 }
 @media (min-width: 62em) {
-  .offer__label {
-    font-size: 2.1875rem;
-  }
   .offer__label:not(:last-child) {
     margin-bottom: 3.125rem;
   }
@@ -205,18 +226,28 @@
   .offer__items:not(:last-child) {
     margin-bottom: 3.125rem;
   }
-  .offer__item {
-    gap: 2.5rem;
-  }
 }
 @media (min-width: 73.4375em) and (max-width: 120em) {
   .offer__description {
     font-size: clamp( 1.5625rem , 0.57676174496875rem  +  1.3422818792vw , 2.1875rem );
   }
 }
+@media (min-width: 75em) and (max-width: 120em) {
+  .offer__label {
+    font-size: clamp( 1.5625rem , 0.52083333333125rem  +  1.3888888889vw , 2.1875rem );
+  }
+  .offer__item {
+    gap: clamp( 1.5625rem , 6.25e-8rem  +  2.0833333333vw , 2.5rem );
+  }
+}
+@media (min-width: 75em) {
+  .offer__label {
+    font-size: 1.5625rem;
+  }
+}
 @media (min-width: 80em) and (max-width: 120em) {
   .offer__item h3 {
-    font-size: clamp( 2.8125rem , 0.3125rem  +  3.125vw , 4.0625rem );
+    font-size: clamp( 2.1875rem , -1.5625rem  +  4.6875vw , 4.0625rem );
   }
 }
 @media (min-width: 120em) {
@@ -225,6 +256,12 @@
   }
   .offer {
     padding-bottom: 9.375rem;
+  }
+  .offer__label {
+    font-size: 2.1875rem;
+  }
+  .offer__item {
+    gap: 2.5rem;
   }
   .offer__item h3 {
     font-size: 4.0625rem;
