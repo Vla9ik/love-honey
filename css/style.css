@@ -2441,7 +2441,7 @@ body {
     opacity: 0.8;
   }
   .interest__more:hover {
-    background: rgb(243.671875, 204.0234375, 48.828125);
+    background: #f5d249;
   }
   .cooperation__item:hover {
     filter: brightness(0.9);
