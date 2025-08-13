@@ -473,12 +473,12 @@ body {
   min-width: 0;
   grid-column: 3/6;
 }
-.out.--reverse {
+.out.out--reverse {
   display: grid;
   min-width: 0;
   grid-template-columns: 0.9375rem 1fr minmax(auto, 100rem) 1fr 0.9375rem;
 }
-.out.--reverse > * {
+.out.out--reverse > * {
   min-width: 0;
   grid-column: 1/4;
 }
