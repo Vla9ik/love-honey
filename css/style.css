@@ -1280,7 +1280,6 @@ body::after {
   display: flex;
   flex-direction: column;
   position: relative;
-  transition: filter 0.3s;
   align-items: center;
   overflow: hidden;
   border-radius: 1.5625rem;
@@ -3447,12 +3446,6 @@ body::after {
   }
   .gifts-consultation__link:hover {
     filter: brightness(0.85);
-  }
-  .cooperation__item:hover {
-    filter: brightness(0.9);
-  }
-  .cooperation__item:hover .cooperation__icon {
-    transform: scale(1.05);
   }
   .partnership-brand a:hover {
     filter: brightness(0.9);
